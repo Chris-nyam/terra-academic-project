@@ -9,6 +9,7 @@ exit 1
 fi
 
 ## Check number of processors
+
 c='nproc'
 if [ ${c} -eq 1 ]
 then
@@ -16,3 +17,6 @@ echo "This server is very small"
 exit 2
 fi
 
+## Checking memory
+free -m
+exit 0
