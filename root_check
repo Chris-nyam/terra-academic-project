@@ -15,10 +15,6 @@ then
 echo "This server is very small"
 exit 2
 fi
-## Check memory
-
-free -m
-exit 99
 
 ## Checking memory
 free -m
