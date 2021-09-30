@@ -10,7 +10,7 @@ fi
 
 ## Check number of processors
 
-if [ 'proc' -eq 1 ]
+if [ 'nproc' -eq 1 ]
 then
 echo "This server is very small"
 exit 2
@@ -20,3 +20,6 @@ fi
 free -m
 exit 99
 
+## Checking memory
+free -m
+exit 0
